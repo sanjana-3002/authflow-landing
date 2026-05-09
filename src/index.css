@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --brand: #2563eb;
+  --brand-light: #3b82f6;
+  --brand-dark: #1d4ed8;
+  --surface: rgba(255, 255, 255, 0.75);
+  --border: rgba(59, 130, 246, 0.12);
+}
+
 * {
   font-family: 'Inter', sans-serif;
   margin: 0;
@@ -70,4 +78,12 @@ a {
 @keyframes card-shimmer {
   0%        { left: -100%; }
   50%, 100% { left: 200%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
