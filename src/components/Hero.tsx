@@ -140,6 +140,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.74, ease: [0.16, 1, 0.3, 1] }}
           >
             <motion.button
+              aria-label="Sign up for AuthFlow — free to start"
               whileHover={{ scale: 1.04, boxShadow: '0 0 30px rgba(37,99,235,0.5), 0 12px 40px rgba(37,99,235,0.4)', y: -2 }}
               whileTap={{ scale: 0.97 }}
               style={{
@@ -152,6 +153,16 @@ export default function Hero() {
               Sign up for free
             </motion.button>
           </motion.div>
+
+          {/* Trust line */}
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.95 }}
+            style={{ color: '#94a3b8', fontSize: '0.78rem', marginTop: 16, letterSpacing: '0.04em' }}
+          >
+            Used by doctors at Mayo Clinic · Kaiser Permanente · and more
+          </motion.p>
 
           {/* Demo cards */}
           <motion.div
