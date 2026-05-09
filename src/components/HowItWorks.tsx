@@ -47,6 +47,15 @@ export default function HowItWorks() {
         How it works
       </motion.h2>
 
+      <motion.p
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 20 }}
+        transition={{ duration: 0.6, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+        style={{ textAlign: 'center', color: '#64748b', fontSize: '1rem', marginBottom: 48, marginTop: -24 }}
+      >
+        From scan to submission-ready draft in 30 seconds.
+      </motion.p>
+
       <div style={{
         display: 'grid',
         gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
