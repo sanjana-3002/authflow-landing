@@ -116,8 +116,8 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
             style={{ color: '#475569', fontSize: '1.125rem', maxWidth: 540, margin: '0 auto', lineHeight: 1.75 }}
           >
-            Turn clinical notes + insurance cards into submission-ready prior
-            authorization forms in minutes.
+            Turn clinical notes and insurance cards into submission-ready prior
+            authorization forms — in under 30 seconds.
           </motion.p>
 
           {/* Secondary text */}
