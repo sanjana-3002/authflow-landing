@@ -71,12 +71,25 @@ export default function Features() {
           fontWeight: 800,
           textAlign: 'center',
           color: '#0f172a',
-          marginBottom: 48,
+          marginBottom: 12,
           position: 'relative', zIndex: 1,
         }}
       >
         Save lives with AuthFlow
       </motion.h2>
+
+      <motion.p
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 20 }}
+        transition={{ duration: 0.6, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+        style={{
+          textAlign: 'center', color: '#64748b',
+          fontSize: '1rem', marginBottom: 48,
+          position: 'relative', zIndex: 1,
+        }}
+      >
+        Two powerful tools built for the people who keep practices running.
+      </motion.p>
 
       <div style={{
         display: 'grid',
