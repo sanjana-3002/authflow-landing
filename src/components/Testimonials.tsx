@@ -41,9 +41,9 @@ export default function Testimonials() {
           fontWeight: 800,
           color: '#0f172a',
           textAlign: 'center',
-          maxWidth: 600,
+          maxWidth: 640,
           margin: '0 auto 48px',
-          lineHeight: 1.25,
+          lineHeight: 1.3,
           position: 'relative', zIndex: 1,
         }}
       >
@@ -93,7 +93,7 @@ export default function Testimonials() {
               <User size={20} color="#64748b" />
             </div>
 
-            <p style={{ color: '#475569', fontSize: '0.9rem', lineHeight: 1.75, fontStyle: 'italic' }}>
+            <p style={{ color: '#475569', fontSize: '0.875rem', lineHeight: 1.8, fontStyle: 'italic' }}>
               "{t.quote}"
             </p>
 
