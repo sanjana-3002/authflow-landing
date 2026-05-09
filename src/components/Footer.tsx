@@ -97,8 +97,8 @@ export default function Footer() {
           flexWrap: 'wrap',
           gap: 8,
         }}>
-          <span style={{ color: '#94a3b8', fontSize: '0.8rem' }}>All rights reserved</span>
-          <span style={{ color: '#94a3b8', fontSize: '0.8rem' }}>Built by AuthFlow</span>
+          <span style={{ color: '#94a3b8', fontSize: '0.8rem' }}>© 2025 AuthFlow. All rights reserved.</span>
+          <span style={{ color: '#94a3b8', fontSize: '0.8rem' }}>Built for medical practices everywhere.</span>
         </div>
       </div>
     </footer>
