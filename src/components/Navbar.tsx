@@ -53,6 +53,8 @@ export default function Navbar() {
 
   return (
     <motion.nav
+      role="navigation"
+      aria-label="Main navigation"
       initial={{ y: -80, opacity: 0 }}
       animate={{
         y: 0,
@@ -94,6 +96,7 @@ export default function Navbar() {
       <div style={{ display: 'flex', alignItems: 'center', gap: 20 }}>
         <NavLink label="Login" id="" scrollTo={() => {}} />
         <motion.button
+          aria-label="Sign up for AuthFlow"
           whileHover={{ scale: 1.04, boxShadow: '0 0 20px rgba(37,99,235,0.3)' }}
           whileTap={{ scale: 0.97 }}
           style={{
