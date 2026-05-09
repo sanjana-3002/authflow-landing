@@ -155,7 +155,19 @@ export default function Pricing() {
               <span style={{ color: plan.highlight ? '#1d4ed8' : '#64748b', fontSize: '0.8rem', fontWeight: 500 }}>
                 {plan.label}
               </span>
-              {plan.badge && (
+              {plan.highlight && (
+                <span style={{
+                  background: 'rgba(37,99,235,0.1)',
+                  border: '1px solid rgba(37,99,235,0.25)',
+                  color: '#1d4ed8',
+                  fontSize: '0.68rem', fontWeight: 700,
+                  padding: '2px 8px', borderRadius: 999,
+                  letterSpacing: '0.04em',
+                }}>
+                  MOST POPULAR
+                </span>
+              )}
+              {plan.badge && annual && (
                 <span style={{
                   background: 'rgba(16,185,129,0.12)',
                   border: '1px solid rgba(16,185,129,0.25)',
