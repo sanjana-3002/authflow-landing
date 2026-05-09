@@ -46,16 +46,24 @@ export default function App() {
       <div style={{
         position: 'fixed', top: '50px', right: '-150px',
         width: 500, height: 500, borderRadius: '50%',
-        background: 'radial-gradient(circle, rgba(196,181,253,0.35) 0%, transparent 70%)',
+        background: 'radial-gradient(circle, rgba(196,181,253,0.3) 0%, transparent 70%)',
         filter: 'blur(70px)', pointerEvents: 'none', zIndex: 0,
       }} />
 
-      {/* Orb 3 — center */}
+      {/* Orb 3 — mid-page sky blue */}
       <div style={{
         position: 'absolute', top: '80vh', left: '30%',
         width: 800, height: 300, borderRadius: '50%',
-        background: 'radial-gradient(circle, rgba(125,211,252,0.3) 0%, transparent 70%)',
+        background: 'radial-gradient(circle, rgba(125,211,252,0.25) 0%, transparent 70%)',
         filter: 'blur(90px)', pointerEvents: 'none', zIndex: 0,
+      }} />
+
+      {/* Orb 4 — lower page accent */}
+      <div style={{
+        position: 'absolute', top: '200vh', right: '10%',
+        width: 600, height: 400, borderRadius: '50%',
+        background: 'radial-gradient(circle, rgba(147,197,253,0.2) 0%, transparent 70%)',
+        filter: 'blur(100px)', pointerEvents: 'none', zIndex: 0,
       }} />
 
       <div style={{ position: 'relative', zIndex: 1 }}>
