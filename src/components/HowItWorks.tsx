@@ -66,9 +66,9 @@ export default function HowItWorks() {
             key={step.title}
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, margin: '-50px' }}
             transition={{ duration: 0.55, delay: i * 0.12, ease: [0.16, 1, 0.3, 1] }}
-            whileHover={{ y: -4 }}
+            whileHover={{ y: -4, boxShadow: '0 20px 50px rgba(59,130,246,0.1)' }}
             style={{
               background: 'rgba(255,255,255,0.7)',
               border: '1px solid rgba(59,130,246,0.1)',
