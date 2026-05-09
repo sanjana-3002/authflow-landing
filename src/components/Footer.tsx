@@ -59,8 +59,8 @@ export default function Footer() {
                 <a
                   key={link}
                   href="#"
-                  style={linkStyle}
-                  onMouseEnter={e => (e.currentTarget.style.color = '#0f172a')}
+                  style={{ ...linkStyle, transition: 'color 0.2s ease' }}
+                  onMouseEnter={e => (e.currentTarget.style.color = '#1d4ed8')}
                   onMouseLeave={e => (e.currentTarget.style.color = '#64748b')}
                 >
                   {link}
