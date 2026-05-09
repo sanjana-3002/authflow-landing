@@ -1,10 +1,10 @@
 import { useEffect, useRef } from 'react'
 import * as THREE from 'three'
 
-const MAIN_COUNT  = 157 // + 3 anchors = 160 total
-const DEPTH_COUNT = 25
+const MAIN_COUNT  = 120 // + 3 anchors = 123 total; reduced for mobile perf
+const DEPTH_COUNT = 20
 const COLORS = [0x3b82f6, 0x7c3aed, 0x0ea5e9, 0x6366f1]
-const CONNECTION_DIST = 200
+const CONNECTION_DIST = 180
 
 type ParticleData = {
   mesh: THREE.Mesh
